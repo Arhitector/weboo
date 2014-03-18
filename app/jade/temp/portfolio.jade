@@ -1,0 +1,29 @@
+extends ../exten/maintemp.jade
+
+block content
+	.side-left
+		.content__box.content__box_padding-bootom
+			h2.cont-title our portfolio
+			.cont-text
+				p Rem aperi aseaque ab illo invento ativert aras architeo bamolu bertas ptatemquia voluptait asper.
+		ul.list-portfolio
+			each item, i in list_portfolio_array.massElem
+				li.list-portfolio__item
+					a(href="#").list-portfolio__item__link
+						img(src="#{item.val}").list-portfolio__item__link__img
+	.side-right
+		.side-right__slider
+			.side-right__slider__box-img
+				img(src="#{path_img}/img2.jpg")
+			.pagination
+				a.side-right__slider__inform__left prev
+				ul.pagination_list
+					li.pagination__item
+						a.pagination__item__link 1
+					li.pagination__item
+						a.pagination__item__link 2
+					li.pagination__item
+						a.pagination__item__link 3
+					li.pagination__item
+						a.pagination__item__link 4
+				a.side-right__slider__inform__right next

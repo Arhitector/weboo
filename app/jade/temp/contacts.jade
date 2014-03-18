@@ -1,0 +1,40 @@
+extends ../exten/maintemp.jade
+
+block content
+	.side-left.side-left-shotest
+		h2.cont-title our address
+		img(src="#{path_img}/img1.jpg").side-left__top-img
+		address.address
+			| 7564 St. Vincent Place, Glasgow, D04 89GR.
+		ul.lis-info
+			li.lis-info__item
+				span Telephone:
+				span + 1 800 548 5486
+			li.lis-info__item
+				span Freephone:
+				span + 1 800 547 5447
+			li.lis-info__item
+				span Fax:
+				span + 1 800 547 5479
+			li.lis-info__item
+				span E-mail:
+				a(href="mailto:mail@companyname.com") mail@companyname.com
+	.side-right.side-right-wide
+		h2.cont-title contact form
+			p.paragraf-padding
+				Vento ate ativerte aras architeo bait autquuntur magni dolore os, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur adipisci velit, sed.
+		form.form-contact
+				.form-contact__box
+					label.form-contact__box__label Your name:
+					input(type="text" ).form-contact__box__input
+					label.form-contact__box__label E-mail address:
+					input(type="text" ).form-contact__box__input
+					label.form-contact__box__label Phone:
+					input(type="text" ).form-contact__box__input
+				.form-contact__box
+					label.form-contact__box__label Your message:
+					textarea().form-contact__box__textarea
+					a.form-contact__box__but
+						input(type="submit" val=" submit").form-contact__box__but__input
+					a.form-contact__box__but
+						input(type="reset" val="clear").form-contact__box__but__input

@@ -3,8 +3,18 @@ html(lang="en")
 	include ../html.jade
 	body
 		.wrapper
-			block header
+			block header_block
+			.header
+				a.logo weboo.
+				span.header__text online creative designer portfolio
+				+list("main_menu", main_menu_array, "")
+
+
 			.content
 				block content
+
 			.footer
-				block footer
+				block footer_block
+				.footer__copyright 
+					| weboo © 2008  |  
+					a(href="#").footer__copyright__link Privacy policy

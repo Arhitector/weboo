@@ -1,0 +1,25 @@
+extends ../exten/maintemp.jade
+
+block content
+	.side-left
+		.content__box.content__box_line
+			h2.cont-title welcome
+			.cont-text
+				p.
+					Lotamrem aperi aseaque ab illo invento ativert aras
+					architeo bamolu bertas ptatemquia voluptait aspernraut
+					odit autquuntur magni dolore!
+			a.more read more
+		h2.cont-title awards
+		ul.servises
+			each item, i in servise_array.massElem
+				li.services__item
+					a(href="#").services__item__link
+						img(src="#{item.val}")
+	.side-right
+		.side-right__slider
+			.side-right__slider__box-img
+				img(src="#{path_img}/img1.jpg")
+			.side-right__slider__inform
+				a.side-right__slider__inform__left project details
+				a.side-right__slider__inform__right view all works list
